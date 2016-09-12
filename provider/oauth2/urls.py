@@ -39,7 +39,7 @@ from ..compat.urls import *
 from .views import Authorize, Redirect, Capture, AccessTokenView, AccessTokenDetailView
 
 
-urlpatterns = ['',
+urlpatterns = [
     url('^authorize/?$',
         login_required(Capture.as_view()),
         name='capture'),
